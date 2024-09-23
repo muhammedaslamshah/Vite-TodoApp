@@ -18,8 +18,19 @@ export default class TodoApp extends Component {
 
     this.setState({
       items: [...this.state.items, input],
+      input: "",
     });
   };
+
+  deleteItem = (key) => {
+    const allItems = this.state.items;
+
+    allItems.splice(key,1);
+
+    this.setState({
+      items:allItems
+    })
+  }
 
   render() {
     const { input, items } = this.state;
@@ -41,7 +52,7 @@ export default class TodoApp extends Component {
           {items.map((data, index) => (
             <li key={index}>
               {data}
-              <i className="fas fa-trash-alt"></i>
+              <i className="fas fa-trash-alt" onClick={() => this.deleteItem(index)}></i>
             </li>
           ))}
         </ul>

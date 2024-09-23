@@ -66,4 +66,6 @@ ul li:hover {
 ul li i{
   text-align: right;
   flex: 1;
+  cursor: pointer;
 }
+

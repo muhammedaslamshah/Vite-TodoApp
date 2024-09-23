@@ -6,14 +6,12 @@ body {
 
 .todo-container {
   width: 350px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  margin: auto;
+  margin-top: 30px;
 }
 
-h1{
+h1 {
   margin: 0;
   margin-bottom: 15px;
   color: #1b8aa0;
@@ -23,7 +21,7 @@ h1{
   background-color: #075d6e;
   padding: 18px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px #00000047; 
+  box-shadow: 0 4px 6px #00000047;
 }
 
 .input-section input {
@@ -37,7 +35,7 @@ h1{
   color: #0f92ac;
 }
 
-input::placeholder{
+input::placeholder {
   color: #08869e;
 }
 
@@ -63,9 +61,8 @@ ul li:hover {
   transform: translateY(-2px);
 }
 
-ul li i{
+ul li i {
   text-align: right;
   flex: 1;
   cursor: pointer;
 }
-

@@ -22,18 +22,14 @@ export default class TodoApp extends Component {
     });
   };
 
-  deleteItem = key => {
+  deleteItem = (key) => {
     this.setState({
-      items: this.state.items.filter((data, index) => index !== key)
-    })
-  }
-
-
-
+      items: this.state.items.filter((data, index) => index !== key),
+    });
+  };
 
   render() {
     const { input, items } = this.state;
-    console.log(items);
 
     return (
       <div className="todo-container" onSubmit={this.storeItems}>
@@ -51,7 +47,10 @@ export default class TodoApp extends Component {
           {items.map((data, index) => (
             <li key={index}>
               {data}
-              <i className="fas fa-trash-alt" onClick={() => this.deleteItem(index)}></i>
+              <i
+                className="fas fa-trash-alt"
+                onClick={() => this.deleteItem(index)}
+              ></i>
             </li>
           ))}
         </ul>

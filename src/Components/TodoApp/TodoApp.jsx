@@ -22,15 +22,14 @@ export default class TodoApp extends Component {
     });
   };
 
-  deleteItem = (key) => {
-    const allItems = this.state.items;
-
-    allItems.splice(key,1);
-
+  deleteItem = key => {
     this.setState({
-      items:allItems
+      items: this.state.items.filter((data, index) => index !== key)
     })
   }
+
+
+
 
   render() {
     const { input, items } = this.state;

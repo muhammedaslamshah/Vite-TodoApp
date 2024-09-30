@@ -36,7 +36,7 @@ h1 {
 }
 
 input::placeholder {
-  color: #e8eced;
+  color: white;
 }
 
 ul {
@@ -51,7 +51,7 @@ ul li {
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 10px;
-  color: #08869e;
+  color: white;
   box-shadow: 0 4px 6px #00000047;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
